@@ -1,0 +1,4 @@
+{
+  "projects": {"default": "autostyle-website-visualizer"},
+  "targets": {"autostyle-website-visualizer": {"hosting": {"tanya": ["tanya-masatit"]}}}
+}

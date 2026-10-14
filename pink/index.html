@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tanya Masatit · Marketing Portfolio</title>
+<meta name="description" content="Marketing portfolio of Tanya Masatit — marketing coordinator, content creator and personal-brand builder in Toronto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap">
+<style>
+:root{
+  --pink:#F2679F;        /* primary */
+  --pink-deep:#E0407F;   /* hover / headings */
+  --pink-soft:#FFD6E6;   /* pills, lines */
+  --pink-mist:#FFEFF5;   /* panels */
+  --blush:#FFF7FA;       /* page ground */
+  --white:#FFFFFF;
+  --text:#2E2A2D;
+  --muted:#6F6368;
+  --faint:#A79AA1;
+  --line:#F3D8E3;
+  --shadow:0 20px 50px -22px rgba(226,80,140,.35);
+  --script:"Pinyon Script", "Snell Roundhand", "Brush Script MT", cursive;
+  --sans:"Poppins", "Helvetica Neue", Arial, sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--blush);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{width:min(1180px,calc(100% - 44px));margin-inline:auto}
+.script{font-family:var(--script);font-weight:400;color:var(--pink);line-height:1}
+.title{font-family:var(--sans);font-weight:700;color:var(--pink-deep);letter-spacing:-.01em}
+.sec{padding:110px 0}
+.sec-title{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.sec-title .script{font-size:clamp(64px,8vw,104px)}
+.sec-title .title{font-size:clamp(26px,3.4vw,40px);font-style:italic;font-weight:600}
+:focus-visible{outline:2px solid var(--pink);outline-offset:4px;border-radius:6px}
+
+/* background blobs */
+.blobs{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.75;animation:drift 22s ease-in-out infinite alternate}
+.b1{width:48vw;height:48vw;left:-14vw;top:-10vw;background:#FFD9E8}
+.b2{width:40vw;height:40vw;right:-12vw;top:18vh;background:#FFE6F0;animation-duration:28s}
+.b3{width:46vw;height:46vw;left:20vw;bottom:-22vw;background:#FFE0EC;animation-duration:34s}
+@keyframes drift{to{transform:translate(4vw,3vw) scale(1.06)}}
+
+/* nav */
+.nav{position:fixed;top:18px;left:0;right:0;z-index:50;display:flex;justify-content:center;padding:0 16px}
+.nav .bar{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:999px;padding:6px;box-shadow:var(--shadow)}
+.nav a{padding:9px 18px;border-radius:999px;font-size:14px;font-weight:500;color:var(--text);transition:background .25s ease,color .25s ease}
+.nav a:hover{background:var(--pink-mist);color:var(--pink-deep)}
+.nav a.cta{background:var(--pink);color:#fff}
+.nav a.cta:hover{background:var(--pink-deep)}
+@media (max-width:640px){.nav a{padding:8px 12px;font-size:13px}.nav a.hide-m{display:none}}
+
+/* hero */
+.hero{position:relative;padding:130px 0 0;overflow:hidden}
+.hero .wrap{position:relative;min-height:760px;display:grid;place-items:end center}
+.learn{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted);margin-bottom:22px;justify-self:start}
+.learn .dot{width:40px;height:40px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center;font-family:var(--script);font-size:22px;color:var(--pink);box-shadow:var(--shadow)}
+.learn span em{font-style:normal;color:var(--pink-deep);font-weight:600}
+.big-word{font-weight:800;line-height:.86;letter-spacing:-.02em;color:var(--pink-deep);font-size:clamp(44px,13.4vw,196px);text-transform:uppercase;margin:0 auto;text-align:center;position:relative;z-index:1}
+.big-word .w1{display:block;color:var(--pink);-webkit-text-stroke:0;}
+.big-word .w2{display:block;color:transparent;-webkit-text-stroke:2px var(--pink-deep);}
+.by{position:absolute;right:0;top:56%;font-family:var(--script);font-size:clamp(36px,4.6vw,66px);color:var(--pink);z-index:3;transform:rotate(-6deg);pointer-events:auto}
+.by small{display:block;font-family:var(--sans);font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);transform:rotate(0)}
+.hero-portrait{position:relative;z-index:2;width:min(540px,78vw);margin-top:-6vw;animation:up 1.2s .2s cubic-bezier(.2,.8,.2,1) both}
+.hero-portrait img{width:100%;height:auto;-webkit-mask-image:linear-gradient(to bottom,#000 78%,transparent 99%);mask-image:linear-gradient(to bottom,#000 78%,transparent 99%)}
+@keyframes up{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+.bubble{position:absolute;border-radius:50%;overflow:hidden;border:6px solid #fff;box-shadow:var(--shadow);z-index:3;animation:bob 7s ease-in-out infinite}
+.bubble img{width:100%;height:100%;object-fit:cover}
+.bb1{width:150px;height:150px;left:6%;top:38%;animation-delay:-2s}
+.bb2{width:118px;height:118px;left:18%;bottom:10%;animation-delay:-4s}
+.bb3{width:132px;height:132px;right:10%;bottom:16%;animation-delay:-1s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.spark{position:absolute;z-index:3;color:var(--pink);animation:twinkle 3.2s ease-in-out infinite}
+.spark svg{width:100%;height:100%}
+.s1{width:34px;height:34px;left:30%;top:28%}
+.s2{width:22px;height:22px;right:28%;top:22%;animation-delay:-1s}
+.s3{width:28px;height:28px;right:22%;bottom:34%;animation-delay:-2s}
+.s4{width:18px;height:18px;left:14%;bottom:30%;animation-delay:-1.6s}
+@keyframes twinkle{0%,100%{transform:scale(.8) rotate(0);opacity:.6}50%{transform:scale(1.15) rotate(20deg);opacity:1}}
+.hero-tag{position:absolute;z-index:4;background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 16px;font-size:13px;font-weight:600;color:var(--pink-deep);box-shadow:var(--shadow);animation:bob 6s ease-in-out infinite}
+.ht1{left:2%;top:62%;animation-delay:-3s}
+.ht2{right:0;top:66%;animation-delay:-1s}
+.chev{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);z-index:4;color:var(--pink);animation:nudge 1.6s ease-in-out infinite}
+.chev svg{width:34px;height:34px}
+@keyframes nudge{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+@media (max-width:800px){.by{position:static;transform:none;text-align:center;margin-top:10px}.bubble{display:none}.bb3{display:block;width:96px;height:96px;right:2%;bottom:20%}.hero-tag{display:none}.hero .wrap{min-height:auto}.hero-portrait{margin-top:10px}.learn{justify-self:center}}
+
+/* who */
+.who .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.who .script-name{font-size:clamp(70px,9vw,120px);line-height:.95}
+.who .script-name small{font-family:var(--sans);font-size:clamp(28px,3.4vw,44px);font-weight:600;color:var(--text);vertical-align:top;margin-right:12px;display:inline-block;transform:translateY(.4em)}
+.roles{margin-top:22px;font-weight:600;color:var(--pink-deep);font-size:17px;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.roles i{width:6px;height:6px;border-radius:50%;background:var(--pink);display:inline-block}
+.who p.body{color:var(--muted);margin-top:18px;max-width:58ch;font-size:15.5px}
+.strengths{margin-top:34px}
+.strengths .label{display:flex;align-items:baseline;gap:4px;margin-bottom:12px}
+.strengths .label .script{font-size:54px}
+.strengths .label b{font-weight:700;color:var(--pink-deep);letter-spacing:.14em;font-size:20px}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{background:var(--pink);color:#fff;font-weight:600;font-size:13px;padding:8px 16px;border-radius:999px;box-shadow:0 10px 20px -12px rgba(226,80,140,.6);transition:transform .25s ease,background .25s ease}
+.pill:hover{transform:translateY(-3px) rotate(-1.5deg);background:var(--pink-deep)}
+.who-visual{position:relative;min-height:560px}
+.who-visual .pic{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:min(420px,88%)}
+.who-visual .pic img{width:100%;height:auto;-webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 99%);mask-image:linear-gradient(to bottom,#000 80%,transparent 99%)}
+.who-visual .ring{position:absolute;left:50%;bottom:-40px;transform:translateX(-50%);width:min(520px,100%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#FFD3E4 0%,#FFE6F0 55%,transparent 72%)}
+.loc{position:absolute;right:0;top:0;background:#fff;border-radius:999px;padding:8px 14px 8px 10px;font-size:13px;font-weight:600;display:flex;gap:8px;align-items:center;box-shadow:var(--shadow);color:var(--text)}
+.loc svg{width:16px;height:16px;color:var(--pink)}
+.heart{position:absolute;right:-4px;top:28%;width:200px;background:#fff;border-radius:22px;padding:14px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;animation:bob 7s ease-in-out infinite}
+.heart .b{width:64px;height:64px;border-radius:50%;overflow:hidden;flex:none;border:3px solid var(--pink-soft)}
+.heart .b img{width:100%;height:100%;object-fit:cover}
+.heart p{font-size:12px;color:var(--muted);line-height:1.4}
+.heart p b{color:var(--pink-deep)}
+.curl{position:absolute;left:-10px;top:52%;color:var(--pink);width:70px}
+@media (max-width:900px){.who .grid{grid-template-columns:1fr}.who-visual{min-height:440px}.heart{right:0;width:180px}}
+
+/* timeline */
+.timeline{background:#fff;border-radius:32px;padding:56px 48px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl-head{display:grid;grid-template-columns:230px 1fr;gap:32px;align-items:start}
+.tl-head .script{font-size:84px;line-height:.9}
+.tl-head .title{font-size:30px;font-style:italic;font-weight:600;color:var(--pink-deep);display:block;margin-top:-10px}
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;position:relative;padding-top:18px}
+.tl::before{content:"";position:absolute;left:8%;right:8%;top:38px;height:2px;background:var(--pink-soft)}
+.tl .yr{display:inline-block;white-space:nowrap;background:#fff;border:2px solid var(--pink);color:var(--pink-deep);font-weight:700;font-size:13px;padding:6px 14px;border-radius:999px;position:relative;z-index:1}
+.tl .node{text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
+.tl .logo{width:120px;height:120px;border-radius:24px;background:var(--pink-mist);border:1px solid var(--line);display:grid;place-items:center;text-align:center;padding:12px;transition:transform .3s ease,box-shadow .3s ease}
+.tl .node:hover .logo{transform:translateY(-6px);box-shadow:var(--shadow)}
+.tl .logo b{display:block;font-weight:800;font-size:15px;line-height:1.1;color:var(--text)}
+.tl .logo small{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-top:4px}
+.tl .role{font-size:13.5px;color:var(--muted);line-height:1.35;max-width:160px}
+.tl .node.now .logo{background:var(--pink);border-color:var(--pink)}
+.tl .node.now .logo b,.tl .node.now .logo small{color:#fff}
+@media (max-width:980px){.tl-head{grid-template-columns:1fr}.tl{grid-template-columns:repeat(2,1fr);gap:28px 12px}.tl::before{display:none}.timeline{padding:40px 24px}}
+@media (max-width:520px){.tl{grid-template-columns:1fr 1fr}.tl .logo{width:104px;height:104px}}
+
+/* bag stats */
+.bag{padding:40px 0 110px}
+.bag .grid{display:grid;grid-template-columns:1fr auto 1fr;gap:28px;align-items:center}
+.bag .q{position:relative}
+.bag .q .title{font-size:clamp(30px,3.6vw,44px);line-height:1.05;font-style:italic;color:var(--text);font-weight:700}
+.bag .q svg{width:70px;color:var(--faint);margin:14px 0 0 40px}
+.stat{text-align:center;padding:14px 8px}
+.stat .n{font-weight:800;font-size:clamp(40px,4.6vw,60px);color:var(--pink);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat .l{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.35;max-width:22ch;margin-inline:auto}
+.stats-col{display:grid;gap:18px}
+.stats-col .stat:nth-child(2){transform:translateX(-36px)}
+.stats-col.right .stat:nth-child(2){transform:translateX(36px)}
+.bag-img{width:min(380px,40vw);height:auto;filter:drop-shadow(0 40px 36px rgba(226,80,140,.3));animation:bob 8s ease-in-out infinite}
+@media (max-width:900px){.bag .grid{grid-template-columns:1fr;gap:12px}.stats-col{grid-template-columns:1fr 1fr;gap:8px}.stats-col .q{grid-column:span 2;text-align:center;margin-bottom:10px}.bag .q svg{display:none}.bag-img{order:-1;margin:0 auto 10px;width:min(300px,70vw)}.stats-col .stat:nth-child(2),.stats-col.right .stat:nth-child(2){transform:none}}
+
+/* proficiency */
+.prof{background:var(--pink-mist);padding:90px 0}
+.prof .grid{display:grid;grid-template-columns:260px 1fr;gap:36px;align-items:center}
+.prof .script{font-size:72px;line-height:.9}
+.prof .title{font-size:30px;font-style:italic;font-weight:600;display:block;margin-top:-6px}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.card{background:#fff;border-radius:22px;padding:22px 14px;text-align:center;box-shadow:0 12px 30px -20px rgba(226,80,140,.5);border:1px solid #fff;transition:transform .3s ease,border-color .3s ease}
+.card:hover{transform:translateY(-6px);border-color:var(--pink-soft)}
+.card .ic{width:46px;height:46px;margin:0 auto 12px;color:var(--pink)}
+.card .ic svg{width:100%;height:100%}
+.card b{display:block;font-weight:600;font-size:14px;line-height:1.3;color:var(--text)}
+@media (max-width:980px){.prof .grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}}
+
+/* work detail */
+.detail .lead{display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:center;margin-bottom:40px}
+.detail .lead .hint{font-size:14px;color:var(--faint);text-align:center;position:relative}
+.detail .lead .hint svg{width:50px;display:block;margin:8px auto 0;color:var(--faint)}
+.jobs{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.job{background:#fff;border-radius:26px;padding:26px 26px 22px;border:1px solid var(--line);box-shadow:0 14px 34px -24px rgba(226,80,140,.45);cursor:pointer;transition:transform .3s ease,box-shadow .3s ease}
+.job:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.job .num{width:30px;height:30px;border-radius:50%;background:var(--pink);color:#fff;font-weight:700;display:grid;place-items:center;font-size:13px}
+.job h3{font-size:22px;font-weight:700;color:var(--text);margin-top:12px;text-decoration:underline;text-decoration-color:var(--pink-soft);text-underline-offset:6px;text-decoration-thickness:3px}
+.job .r{color:var(--pink-deep);font-weight:600;font-size:14px;margin-top:4px}
+.job .role{color:var(--pink-deep);font-weight:600;font-size:14px;margin-top:4px}
+.job .d{color:var(--faint);font-size:12.5px;margin-top:2px}
+.job .more{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.2,.8,.2,1)}
+.job.open .more{max-height:400px}
+.job ul{margin:14px 0 0;padding-left:18px;color:var(--muted);font-size:14px;display:grid;gap:6px}
+.job ul li::marker{color:var(--pink)}
+.job .tog{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:13px;font-weight:600;color:var(--pink-deep)}
+.job .tog svg{width:14px;height:14px;transition:transform .3s ease}
+.job.open .tog svg{transform:rotate(180deg)}
+@media (max-width:900px){.detail .lead{grid-template-columns:1fr}.jobs{grid-template-columns:1fr}}
+
+/* software */
+.soft{padding:90px 0}
+.soft .grid{display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:center}
+.soft .script{font-size:72px;display:block}
+.soft-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.soft-card{background:#fff;border-radius:20px;padding:18px;border:1px solid var(--line);box-shadow:0 12px 30px -22px rgba(226,80,140,.5)}
+.soft-card b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:12px;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--pink-mist);color:var(--text);font-size:13px;font-weight:500;padding:6px 12px;border-radius:999px}
+@media (max-width:980px){.soft .grid{grid-template-columns:1fr}.soft-cards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.soft-cards{grid-template-columns:1fr}}
+
+/* pie */
+.pie{padding:60px 0 110px}
+.pie .grid{display:grid;grid-template-columns:1fr auto 1fr;gap:28px;align-items:center}
+.pie .side{position:relative}
+.pie .side .script{font-size:clamp(60px,7vw,96px);line-height:1}
+.pie .side .cap{font-size:14px;color:var(--muted);line-height:1.4}
+.pie .side.left{text-align:right}
+.pie .side .list{font-size:13px;color:var(--faint);margin-top:14px;max-width:30ch}
+.pie .side.left .list{margin-left:auto}
+.pie .you{display:inline-block;margin-top:18px;border:2px solid var(--pink);color:var(--pink-deep);font-weight:700;border-radius:999px;padding:10px 20px;font-size:14px;transform:rotate(-4deg)}
+.pie-chart{width:min(420px,80vw);filter:drop-shadow(0 30px 40px rgba(226,80,140,.3))}
+.pie-chart .slice-you{transform-origin:210px 210px;animation:pop 1.2s cubic-bezier(.2,.8,.2,1) both}
+@keyframes pop{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
+.pie-chart .lbl{font-family:var(--sans);font-weight:800;font-size:15px;fill:#2E2A2D}
+.pie-chart .lbl small{font-weight:500}
+@media (max-width:900px){.pie .grid{grid-template-columns:1fr}.pie .side.left{text-align:left}.pie .side.left .list{margin-left:0}.pie-chart{margin:0 auto}}
+
+/* projects */
+.projects{padding:0 0 110px}
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px 32px}
+.proj{position:relative}
+.proj .img{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:16/10;box-shadow:var(--shadow);border:6px solid #fff;background:var(--pink-mist)}
+.proj .img img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.proj:hover .img img{transform:scale(1.05)}
+.proj .yr{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.9);border-radius:999px;padding:6px 14px;font-weight:700;font-size:13px;color:var(--pink-deep)}
+.proj .head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:18px;flex-wrap:wrap}
+.proj h3{font-size:22px;font-weight:700}
+.proj .tags{display:flex;gap:6px;flex-wrap:wrap}
+.proj .tags span{border:1.5px solid var(--text);border-radius:999px;padding:4px 12px;font-size:12px;font-weight:500}
+.proj p{color:var(--muted);font-size:15px;margin-top:8px;max-width:52ch}
+@media (max-width:860px){.proj-grid{grid-template-columns:1fr}}
+
+/* contact */
+.contact{padding:60px 0 50px}
+.contact .box{background:#fff;border-radius:36px;padding:70px 48px;text-align:center;box-shadow:var(--shadow);border:1px solid var(--line);position:relative;overflow:hidden}
+.contact .box::before,.contact .box::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:var(--pink-mist);z-index:0}
+.contact .box::before{left:-90px;top:-90px}.contact .box::after{right:-90px;bottom:-110px}
+.contact .inner{position:relative;z-index:1}
+.contact .script{font-size:clamp(64px,8vw,110px)}
+.contact h2 .title{font-size:clamp(24px,3vw,36px);font-style:italic;font-weight:600;display:block;margin-top:-6px}
+.contact p{color:var(--muted);margin:18px auto 0;max-width:44ch}
+.contact .links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.lbtn{display:inline-flex;align-items:center;gap:10px;background:var(--pink);color:#fff;font-weight:600;padding:14px 22px;border-radius:999px;transition:transform .25s ease,background .25s ease;box-shadow:0 14px 30px -14px rgba(226,80,140,.7)}
+.lbtn:hover{transform:translateY(-3px);background:var(--pink-deep)}
+.lbtn.ghost{background:#fff;color:var(--pink-deep);border:2px solid var(--pink);box-shadow:none}
+.lbtn svg{width:18px;height:18px}
+.wave{font-size:22px;margin-top:26px;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:24px 4px 0;font-size:12px;color:var(--faint)}
+
+/* reveal */
+.r{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.r.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}.r{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="blobs" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+
+<nav class="nav" aria-label="Main">
+  <div class="bar">
+    <a href="#who">About Me</a>
+    <a href="#work">Work</a>
+    <a href="#projects" class="hide-m">Projects</a>
+    <a href="#contact" class="cta">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div style="position:relative;width:100%;display:grid;justify-items:center">
+      <div class="learn"><span class="dot">T</span><span>learn about me in <em>5 minutes!</em></span></div>
+      <h1 class="big-word"><span class="w1">Marketing</span><span class="w2">Portfolio</span></h1>
+      <div class="by">by Tanya Masatit<small>Toronto · 2026</small></div>
+      <div class="hero-portrait"><img src="../assets/tanya-portrait.webp" alt="Tanya Masatit" width="1255" height="1400" fetchpriority="high"></div>
+
+      <div class="bubble bb1"><img src="../assets/photo-summer-party.jpg" alt="Tanya at a client summer party"></div>
+      <div class="bubble bb2"><img src="../assets/proj-tavern.jpg" alt="Thai food content shoot"></div>
+      <div class="bubble bb3"><img src="../assets/proj-snack.jpg" alt="Snack brand packaging"></div>
+
+      <span class="hero-tag ht1">3M+ organic views ✦</span>
+      <span class="hero-tag ht2">Social · Content · Brand</span>
+
+      <span class="spark s1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg></span>
+      <span class="spark s2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg></span>
+      <span class="spark s3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.6-9.3-9A5.3 5.3 0 0 1 12 6.5 5.3 5.3 0 0 1 21.3 12C19 16.4 12 21 12 21z"/></svg></span>
+      <span class="spark s4" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg></span>
+    </div>
+    <a class="chev" href="#who" aria-label="Scroll down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="sec who" id="who">
+  <div class="wrap grid">
+    <div>
+      <h2 class="script script-name"><small>Who is</small>Tanya Masatit?</h2>
+      <div class="roles"><span>Marketing Coordinator</span><i></i><span>Content Creator</span><i></i><span>Personal-Brand Builder</span></div>
+      <p class="body">Hey, I'm Tanya! I'm a motivated, adaptable marketer with international experience in social media management, content marketing, customer service and B2B client relations. I have a track record of creating engaging content, managing brand partnerships and delivering client experiences people remember.</p>
+      <p class="body">During university I launched my own personal brand, which taught me how to spot a market opportunity and act on it. Having worked in Thailand, the United States and Canada, I thrive in multicultural teams and I do my best problem-solving under pressure.</p>
+      <div class="strengths">
+        <div class="label"><span class="script">S</span><b>TRENGTHS</b></div>
+        <div class="pills">
+          <span class="pill">Storytelling</span><span class="pill">Adaptability</span><span class="pill">Client relationships</span><span class="pill">Problem-solving</span><span class="pill">Communication</span><span class="pill">High-agency</span><span class="pill">Multicultural teams</span>
+        </div>
+      </div>
+    </div>
+    <div class="who-visual r">
+      <div class="ring"></div>
+      <span class="loc"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Toronto, Canada</span>
+      <div class="pic"><img src="../assets/tanya-portrait.webp" alt="" aria-hidden="true"></div>
+      <div class="heart">
+        <div class="b"><img src="../assets/proj-tavern.jpg" alt=""></div>
+        <p><b>Thai food, fashion</b> and Toronto patios have my heart!</p>
+      </div>
+      <svg class="curl" viewBox="0 0 70 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 30c14-18 30-18 38-4 4 7 12 8 20 2"/><path d="m56 24 7 4-3 7"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="sec" id="work" style="padding-top:20px">
+  <div class="wrap">
+    <div class="timeline r">
+      <div class="tl-head">
+        <div><span class="script">W</span><span class="title" style="display:inline;font-size:48px;font-style:normal;font-weight:800;color:var(--pink);letter-spacing:.04em">ORK</span><span class="title">experience</span></div>
+        <div class="tl">
+          <div class="node"><span class="yr">2018</span><div class="logo"><div><b>Brittian Ocean Reef</b><small>Myrtle Beach</small></div></div><span class="role">Front Desk Associate</span></div>
+          <div class="node"><span class="yr">2023–25</span><div class="logo"><div><b>Inditex</b><small>Toronto</small></div></div><span class="role">Sales Associate</span></div>
+          <div class="node"><span class="yr">2025</span><div class="logo"><div><b>Seneca</b><small>Polytechnic</small></div></div><span class="role">Business Marketing Diploma</span></div>
+          <div class="node"><span class="yr">2025–26</span><div class="logo"><div><b>Tha Phae Tavern</b><small>Toronto</small></div></div><span class="role">Marketing Coordinator</span></div>
+          <div class="node now"><span class="yr">2026–Now</span><div class="logo"><div><b>MAXPower</b><small>Services Inc.</small></div></div><span class="role">Junior Marketing Coordinator</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BAG -->
+<section class="bag">
+  <div class="wrap grid">
+    <div class="stats-col">
+      <div class="q r"><h2 class="title">What's in<br>my bag?</h2><svg viewBox="0 0 70 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6c6 22 22 34 50 36"/><path d="m50 34 8 8-10 4"/></svg></div>
+      <div class="stat r"><div class="n">3M+</div><div class="l">organic views on a two-part Instagram series</div></div>
+      <div class="stat r"><div class="n">70K+</div><div class="l">shares, with no paid promotion</div></div>
+    </div>
+    <img class="bag-img r" src="../assets/prop-tote.webp" alt="" aria-hidden="true" width="862" height="1000">
+    <div class="stats-col right">
+      <div class="stat r"><div class="n">250K+</div><div class="l">interactions across the series</div></div>
+      <div class="stat r"><div class="n">65K+</div><div class="l">saves (the long-term value signal)</div></div>
+      <div class="stat r"><div class="n">3</div><div class="l">countries worked in: Thailand, USA, Canada</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFICIENCY -->
+<section class="prof">
+  <div class="wrap grid">
+    <div class="r"><span class="script">A</span><span class="title" style="display:inline;font-size:44px;font-style:normal;font-weight:800;color:var(--pink);letter-spacing:.04em">REAS</span><span class="title">of proficiency</span></div>
+    <div class="cards">
+      <div class="card r"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div><b>Social Media + Content Creation</b></div>
+      <div class="card r"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2l.9-5.5-4-3.9L9.5 8z"/></svg></div><b>Brand Management</b></div>
+      <div class="card r"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><b>Digital Marketing (Website + Email)</b></div>
+      <div class="card r"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="m13 7 3 3"/></svg></div><b>Communications &amp; Copywriting</b></div>
+      <div class="card r"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10h18v10H3z"/><path d="M8 10V6a4 4 0 0 1 8 0v4"/><path d="M12 14v3"/></svg></div><b>Event &amp; Trade-Show Marketing</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAIL -->
+<section class="sec detail">
+  <div class="wrap">
+    <div class="sec-title"><span class="script">W</span><span class="title" style="font-style:normal;font-weight:800;color:var(--pink);letter-spacing:.04em;font-size:48px">ORK</span><span class="title">experience</span></div>
+    <div class="lead">
+      <div class="hint">Click on each to explore!<svg viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 6c4 16 14 28 30 34"/><path d="m32 32 8 8-10 3"/></svg></div>
+      <div class="jobs">
+        <article class="job" tabindex="0">
+          <span class="num">1</span>
+          <h3>MAXPower Services Inc.</h3>
+          <p class="role">Junior Marketing Coordinator</p>
+          <p class="d">Mar 2026 – Present · Toronto · supporting Milestone Energy and CORE Plumbing &amp; Mechanical</p>
+          <div class="more"><ul>
+            <li>Produce LinkedIn and web content for three B2B brands serving property managers and building owners.</li>
+            <li>Helped launch the Landscape &amp; Design Division brochure, from copy and visuals to the announcement campaign.</li>
+            <li>Represented CORE Plumbing &amp; Mechanical at PM Springfest 2026, from booth set-up to follow-up.</li>
+            <li>Capture project stories on site, including communications infrastructure work at BMO Field ahead of the FIFA World Cup.</li>
+          </ul></div>
+          <span class="tog">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </article>
+        <article class="job" tabindex="0">
+          <span class="num">2</span>
+          <h3>Tha Phae Tavern Inc.</h3>
+          <p class="role">Marketing Coordinator</p>
+          <p class="d">Aug 2025 – Mar 2026 · Toronto · hybrid (Host, Mar – Oct 2025)</p>
+          <div class="more"><ul>
+            <li>Owned the restaurant's social channels: content calendar, short-form video, menu launches and events.</li>
+            <li>Coordinated creator and local-business partnerships to grow reach in the neighbourhood.</li>
+            <li>Started on the floor as Host, which is where the guest insight behind the content came from.</li>
+          </ul></div>
+          <span class="tog">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </article>
+        <article class="job" tabindex="0">
+          <span class="num">3</span>
+          <h3>Inditex · ZARA</h3>
+          <p class="role">Sales Associate</p>
+          <p class="d">Feb 2023 – Jul 2025 (Inditex) · Nov 2025 – Jan 2026 (ZARA, seasonal) · Toronto</p>
+          <div class="more"><ul>
+            <li>Delivered outstanding customer service across product selection, fittings and purchase decisions.</li>
+            <li>Exceeded sales targets through strong product knowledge and effective communication.</li>
+            <li>Peak-season floor and fitting-room sales for one of the world's most-watched fashion retailers.</li>
+          </ul></div>
+          <span class="tog">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </article>
+        <article class="job" tabindex="0">
+          <span class="num">4</span>
+          <h3>Brittian Ocean Reef Resort</h3>
+          <p class="role">Front Desk Associate</p>
+          <p class="d">Apr – Aug 2018 · Myrtle Beach, South Carolina · contract</p>
+          <div class="more"><ul>
+            <li>Welcomed guests through check-in, check-out and reservations, keeping the experience exceptional.</li>
+            <li>Resolved guest complaints professionally and kept satisfaction high.</li>
+            <li>Coordinated housekeeping and maintenance teams so guest needs were met promptly.</li>
+          </ul></div>
+          <span class="tog">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOFTWARE -->
+<section class="soft">
+  <div class="wrap grid">
+    <div class="r"><span class="script">Software</span></div>
+    <div class="soft-cards">
+      <div class="soft-card r"><b>Design &amp; content</b><div class="chips"><span class="chip">Canva</span><span class="chip">CapCut</span><span class="chip">Lightroom</span><span class="chip">Figma</span></div></div>
+      <div class="soft-card r"><b>Social &amp; scheduling</b><div class="chips"><span class="chip">Instagram</span><span class="chip">TikTok</span><span class="chip">LinkedIn</span><span class="chip">Meta Business Suite</span><span class="chip">Later</span></div></div>
+      <div class="soft-card r"><b>AI tools</b><div class="chips"><span class="chip">ChatGPT</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">Copilot</span></div></div>
+      <div class="soft-card r"><b>Office &amp; analytics</b><div class="chips"><span class="chip">Microsoft 365</span><span class="chip">Google Workspace</span><span class="chip">Google Analytics</span><span class="chip">Notion</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PIE -->
+<section class="pie">
+  <div class="wrap grid">
+    <div class="side left r">
+      <div class="cap">Companies/<br>Brands I've</div>
+      <div class="script">Brands</div>
+      <div class="cap" style="margin-top:6px">worked with</div>
+      <p class="list">Property services, energy, hospitality, fashion retail and a university startup lab.</p>
+    </div>
+    <svg class="pie-chart r" viewBox="0 0 420 420" aria-label="Brands worked with, with one slice reserved for you">
+      <circle cx="210" cy="210" r="190" fill="#FFE6F0"/>
+      <path class="slice-you" d="M210 210 L210 20 A190 190 0 0 1 376 118 Z" fill="#F2679F"/>
+      <text class="lbl" x="268" y="112" fill="#fff" style="fill:#fff;font-size:22px">YOU</text>
+      <text class="lbl" x="96" y="150">MAXPower</text>
+      <text class="lbl" x="76" y="192">Milestone Energy</text>
+      <text class="lbl" x="84" y="234">CORE Plumbing</text>
+      <text class="lbl" x="92" y="276">Tha Phae Tavern</text>
+      <text class="lbl" x="104" y="318">ZARA · Inditex</text>
+      <text class="lbl" x="262" y="250">Seneca</text>
+      <text class="lbl" x="262" y="300">Bangkok U.</text>
+      <text class="lbl" x="150" y="364" style="font-size:12px;fill:#A79AA1">Brittian Ocean Reef Resort</text>
+    </svg>
+    <div class="side r">
+      <div class="cap">Companies/<br>Brands I've</div>
+      <div class="script">Never</div>
+      <div class="cap" style="margin-top:6px">worked with</div>
+      <p class="list">Leaders in CPG, tech, hospitality, fashion, agencies &amp; more.</p>
+      <span class="you">this could be YOU!</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <div class="wrap">
+    <div class="sec-title"><span class="script">Projects</span><span class="title">&amp; case studies</span></div>
+    <div class="proj-grid">
+      <article class="proj r">
+        <div class="img"><img src="../assets/proj-calendar.jpg" alt="Planning a content calendar" loading="lazy"><span class="yr">2026</span></div>
+        <div class="head"><h3>The 3M-view organic series</h3><div class="tags"><span>Content Strategy</span><span>Personal Brand</span></div></div>
+        <p>A two-part Instagram content test built on hook, pacing and sequencing instead of ad spend. 3M+ views, 250K+ interactions, 65K+ saves and 70K+ shares in two months.</p>
+      </article>
+      <article class="proj r">
+        <div class="img"><img src="../assets/proj-landscape.jpg" alt="Commercial landscaping brochure" loading="lazy"><span class="yr">2026</span></div>
+        <div class="head"><h3>Landscape &amp; Design brochure</h3><div class="tags"><span>B2B Content</span><span>Launch</span></div></div>
+        <p>Introducing MAXPower's expanded Landscape &amp; Design Division to property managers: brochure content, renderings and the LinkedIn announcement campaign.</p>
+      </article>
+      <article class="proj r">
+        <div class="img"><img src="../assets/proj-booth.jpg" alt="Expo booth" loading="lazy"><span class="yr">2026</span></div>
+        <div class="head"><h3>PM Springfest 2026 booth</h3><div class="tags"><span>Event Marketing</span><span>Lead Gen</span></div></div>
+        <p>Represented CORE Plumbing &amp; Mechanical alongside MAXPower at the property-management expo, from the booth plan to conversations and follow-up.</p>
+      </article>
+      <article class="proj r">
+        <div class="img"><img src="../assets/proj-tavern.jpg" alt="Thai food content shoot" loading="lazy"><span class="yr">2025</span></div>
+        <div class="head"><h3>Tha Phae Tavern social relaunch</h3><div class="tags"><span>Social Media</span><span>Food Content</span></div></div>
+        <p>Took a Toronto Thai tavern's Instagram from occasional posts to a weekly rhythm of dish-led video, menu drops and event promotion.</p>
+      </article>
+      <article class="proj r">
+        <div class="img"><img src="../assets/proj-snack.jpg" alt="Snack brand packaging" loading="lazy"><span class="yr">2021</span></div>
+        <div class="head"><h3>Capstone snack brand, Bangkok</h3><div class="tags"><span>Go-to-market</span><span>Brand Launch</span></div></div>
+        <p>Launched a personal snack brand as my Bangkok University capstone: product, packaging, pricing and go-to-market. The project that made me a marketer.</p>
+      </article>
+      <article class="proj r">
+        <div class="img" style="display:grid;place-items:center;background:linear-gradient(135deg,#FFE6F0,#FFD3E4)"><div style="text-align:center;padding:24px"><div class="script" style="font-size:64px">Next?</div><p style="color:var(--pink-deep);font-weight:600;margin-top:6px">Your brand could be the next case study.</p></div><span class="yr">Soon</span></div>
+        <div class="head"><h3>Your project here</h3><div class="tags"><span>Let's talk</span></div></div>
+        <p>Open to marketing coordinator, social media and content roles in Toronto, hybrid or remote.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="box r">
+      <div class="inner">
+        <h2><span class="script">Contact Me</span><span class="title">Interested in my work? Just want to chat? Let's connect!</span></h2>
+        <p>Open to marketing coordinator, social media and content roles in Toronto, hybrid or remote.</p>
+        <div class="links">
+          <a class="lbtn" href="mailto:hello@tanyamasatit.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>hello@tanyamasatit.com</a>
+          <a class="lbtn ghost" href="https://www.linkedin.com/in/tanya-masatit-a5a35b322/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>LinkedIn</a>
+        </div>
+        <p class="wave">Thanks for visiting! 👋</p>
+      </div>
+    </div>
+    <div class="foot"><span>© 2026 Tanya Masatit</span><span>Toronto, Ontario, Canada</span></div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.r');
+  if (location.search.indexOf('noanim')>-1) reduce = true;
+  if ('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); }, {rootMargin:'0px 0px -8% 0px', threshold:.08});
+    els.forEach(function(el){ io.observe(el); });
+    requestAnimationFrame(function(){ els.forEach(function(el){ if(el.getBoundingClientRect().top < window.innerHeight) el.classList.add('in'); }); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+
+  // Expandable jobs
+  document.querySelectorAll('.job').forEach(function(j){
+    function toggle(){ j.classList.toggle('open'); j.querySelector('.tog').firstChild.textContent = j.classList.contains('open') ? 'Close ' : 'Explore '; }
+    j.addEventListener('click', toggle);
+    j.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
+  });
+})();
+</script>
+</body>
+</html>
