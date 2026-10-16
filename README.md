@@ -5,9 +5,10 @@ Two static portfolio designs for Tanya Masatit (marketing coordinator, Toronto).
 | Version | Path | Style |
 |---|---|---|
 | 1 | `index.html` | Editorial: Bodoni + camel and black, dark/light aware |
+| 1b | `light/index.html` | Same as version 1, locked to a white background |
 | 2 | `pink/index.html` | Pink, script-and-sans, modeled on a reference portfolio |
 
-Live: <https://tanya-masatit.web.app/> and <https://tanya-masatit.web.app/pink/>
+Live: <https://tanya-masatit.web.app/>, <https://tanya-masatit.web.app/light/> and <https://tanya-masatit.web.app/pink/>
 
 ## Run locally
 
