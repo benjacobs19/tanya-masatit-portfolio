@@ -736,6 +736,12 @@ p{margin:0}
     els.forEach(function(el){ io.observe(el); });
     requestAnimationFrame(function(){ els.forEach(function(el){ if(el.getBoundingClientRect().top < window.innerHeight) el.classList.add('in'); }); });
   } else { els.forEach(function(el){ el.classList.add('in'); }); }
+  // Fail-safe: reveal anything in view on scroll/resize, and everything after a few seconds,
+  // so no section can stay hidden if the observer is throttled (embedded or background views).
+  var sraf=null; function revealVisible(){ sraf=null; els.forEach(function(el){ if(el.classList.contains('in')) return; var r=el.getBoundingClientRect(); if(r.top < window.innerHeight*1.15 && r.bottom > -40) el.classList.add('in'); }); }
+  function onReveal(){ if(!sraf) sraf=requestAnimationFrame(revealVisible); }
+  window.addEventListener('scroll', onReveal, {passive:true}); window.addEventListener('resize', onReveal); window.addEventListener('load', onReveal);
+  setTimeout(function(){ els.forEach(function(el){ el.classList.add('in'); }); }, 7000);
 
   var stage = document.getElementById('stage');
   if (stage && !reduce && window.matchMedia('(pointer:fine)').matches && window.innerWidth >= 1200){
