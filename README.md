@@ -24,5 +24,5 @@ firebase deploy --only hosting:tanya
 ## Placeholders to replace
 
 - Contact email (`hello@tanyamasatit.com`)
-- Tha Phae Tavern bullet points and the software list
-- The five project cover images in `assets/proj-*.jpg` are AI-generated stand-ins
+- Dates and bullet wording for the Monography and Solis Movement content-creator work
+- Version 2 only: the five project cover images in `assets/proj-*.jpg` are AI-generated stand-ins
