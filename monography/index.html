@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monography · Tanya Masatit</title>
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Tanya Masatit's content-creator work for Monography, the self-portrait and walk-in photobooth studio in Toronto and Montréal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bone:#141210; --bone-2:#1E1A16; --ink:#F1ECE4; --ink-2:#C9BDAE; --ink-3:#8F8375;
+  --line:rgba(241,236,228,.14); --camel:#B8894C; --camel-2:#D9B27C; --orchid:#C8386B;
+  --dark-text:#F1ECE4; --dark-muted:#A79B8C; --card:#1E1A16;
+  --shadow:0 30px 60px -30px rgba(0,0,0,.8);
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --body:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono","SF Mono",Menlo,monospace;
+  --radius:22px; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bone);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;font-weight:500;text-wrap:balance}
+p{margin:0}
+.wrap{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.sec{padding:100px 0}
+.sec-head{margin-bottom:44px;max-width:60ch}
+.sec-head h2{font-family:var(--display);font-size:clamp(36px,5vw,62px);line-height:1;letter-spacing:-.01em}
+.sec-head h2 em{font-style:italic;font-weight:500;font-variation-settings:"opsz" 32;color:var(--camel)}
+.sec-head p{color:var(--ink-2);margin-top:16px}
+:focus-visible{outline:2px solid var(--camel);outline-offset:4px;border-radius:4px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:999px;border:1px solid var(--ink);font-weight:500;font-size:15px;transition:transform .25s ease,background .25s ease,color .25s ease,border-color .25s ease;background:transparent;color:var(--ink)}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--ink);color:var(--bone)}
+.btn.solid:hover{background:var(--camel);border-color:var(--camel);color:#fff}
+.btn svg{width:16px;height:16px;flex:none}
+
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;padding:16px 0;transition:background .3s ease}
+.nav.scrolled{background:color-mix(in srgb,var(--bone) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.back{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--ink-2)}
+.back svg{width:16px;height:16px}
+.back:hover{color:var(--ink)}
+.mark{font-family:var(--display);font-size:20px;white-space:nowrap}
+
+/* banner */
+.banner{position:relative;margin-top:72px;background:#0A0908;border-bottom:1px solid var(--line);overflow:hidden}
+.banner::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 18% 35%,rgba(184,137,76,.16),transparent 55%)}
+.banner .wrap{position:relative;z-index:1;padding:110px 0 56px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}
+.wordmark{display:inline-flex;align-items:center;gap:14px;margin-bottom:26px}
+.wordmark .disc{width:56px;height:56px;border-radius:50%;background:#000;border:2px solid #fff;display:grid;place-items:center;font-family:var(--body);font-weight:700;font-size:7px;letter-spacing:.08em;color:#fff}
+.wordmark b{font-family:var(--body);font-weight:700;letter-spacing:.14em;font-size:20px}
+.wordmark small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--camel-2);margin-top:4px;font-weight:400}
+.banner h1{font-family:var(--display);font-size:clamp(44px,7vw,92px);line-height:.95;letter-spacing:-.015em}
+.banner h1 em{font-style:italic;font-weight:500;font-variation-settings:"opsz" 28;color:var(--camel-2)}
+.banner .meta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:22px}
+.banner .meta .pill{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:7px 11px;border:1px solid rgba(241,236,228,.3);border-radius:999px;color:var(--ink-2)}
+.banner .side{justify-self:end;max-width:40ch;color:var(--ink-2);font-size:16px;display:grid;gap:14px}
+.banner .side a{color:var(--ink);border-bottom:1px solid var(--camel);padding-bottom:3px;display:inline-block;justify-self:start}
+@media (max-width:900px){.banner .wrap{grid-template-columns:1fr}.banner .side{justify-self:start}}
+
+/* brief */
+.brief .grid{display:grid;grid-template-columns:1fr .9fr;gap:56px;align-items:start}
+.brief .obj{font-family:var(--display);font-size:clamp(24px,2.6vw,34px);line-height:1.25;letter-spacing:-.005em}
+.brief .obj em{font-style:italic;color:var(--camel)}
+.block{margin-top:36px}
+.block .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--camel);margin-bottom:12px}
+.block ul{margin:0;padding-left:18px;display:grid;gap:10px;color:var(--ink-2);font-size:16px;max-width:58ch}
+.block ul li::marker{color:var(--camel)}
+.phone{justify-self:center;width:min(380px,100%);border-radius:30px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff;position:sticky;top:100px}
+.phone img{width:100%;height:auto}
+.phone .cap{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dark-muted);background:var(--bone-2);padding:12px 16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px}
+.phone .cap a{color:var(--ink)}
+@media (max-width:900px){.brief .grid{grid-template-columns:1fr}.phone{position:static}}
+
+/* videos */
+.videos{background:var(--bone-2);padding:100px 0}
+.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.vid{display:grid;grid-template-columns:240px 1fr;gap:26px;align-items:start;background:var(--bone);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.vid video{width:100%;aspect-ratio:9/16;border-radius:14px;background:#000;object-fit:cover}
+.vid h3{font-family:var(--display);font-size:28px;line-height:1.05}
+.vid .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--camel);margin-bottom:10px}
+.vid p{color:var(--ink-2);font-size:15px;margin-top:12px}
+.vid ul{margin:12px 0 0;padding-left:18px;color:var(--ink-2);font-size:14.5px;display:grid;gap:6px}
+.vid ul li::marker{color:var(--camel)}
+.reel-cta{margin-top:28px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.reel-cta p{color:var(--ink-2);font-size:15px}
+@media (max-width:1100px){.vid-grid{grid-template-columns:1fr}}
+@media (max-width:600px){.vid{grid-template-columns:1fr}.vid video{max-width:300px;margin:0 auto}}
+
+/* results */
+.results .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.rcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.rcard .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--camel);margin-bottom:14px}
+.rcard ul{margin:0;padding-left:18px;display:grid;gap:10px;color:var(--ink-2);font-size:15.5px}
+.rcard ul li::marker{color:var(--camel)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:9px 14px;border:1px solid var(--line);border-radius:999px;font-size:14px;font-weight:500;background:var(--bone)}
+.photo{margin-top:28px;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;box-shadow:var(--shadow);position:relative}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo span{position:absolute;left:14px;bottom:14px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(20,18,16,.74);color:var(--dark-text);padding:7px 11px;border-radius:999px}
+@media (max-width:900px){.results .grid{grid-template-columns:1fr}}
+
+.foot{border-top:1px solid var(--line);padding:40px 0 60px}
+.foot .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot small{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+
+.r{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.r.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}.r{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="back" href="../#exp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>Back to portfolio</a>
+    <a class="mark" href="../">Tanya Masatit</a>
+  </div>
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+  <div class="wrap">
+    <div>
+      <div class="wordmark"><span class="disc">MONOGRAPHY</span><span><b>MONOGRAPHY</b><small>Self-portrait / walk-in photobooth · Toronto + Montréal</small></span></div>
+      <p class="eyebrow" style="color:var(--ink-2)">Case study · Monography</p>
+      <h1>Content <em>Creator</em></h1>
+      <div class="meta">
+        <span class="pill">2025</span>
+        <span class="pill">Toronto, ON</span>
+        <span class="pill">Instagram · TikTok</span>
+      </div>
+    </div>
+    <div class="side">
+      <p>Monography is a self-portrait studio and walk-in photobooth with locations in Toronto and Montréal: you control the camera, the studio handles the light, and you leave with prints. 32K followers on Instagram.</p>
+      <a href="https://www.instagram.com/monography/" target="_blank" rel="noopener">@monography ↗</a>
+      <a href="https://monography.ca" target="_blank" rel="noopener">monography.ca ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- BRIEF -->
+<section class="sec brief">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Objective</p>
+      <p class="obj" style="margin-top:14px">Create engaging visual content that showcases Monography's unique self-portrait experience, <em>strengthens brand awareness</em> and attracts customers through social media.</p>
+      <div class="block">
+        <div class="k">Responsibilities</div>
+        <ul>
+          <li>Created engaging social media content highlighting the studio experience, photobooth concepts and creative photo opportunities.</li>
+          <li>Developed visual content that reflected Monography's aesthetic and encouraged audiences to engage with the brand.</li>
+          <li>Translated the in-studio customer experience into relatable and shareable digital content.</li>
+          <li>Supported content planning and execution to maintain a consistent brand presence across social media platforms.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="phone r">
+      <img src="../assets/monography/ig-profile.jpg" alt="Monography's Instagram profile: 1,467 posts, 32.4K followers">
+      <div class="cap"><span>@monography · 32.4K followers</span><a href="https://www.instagram.com/monography/" target="_blank" rel="noopener">Open ↗</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section class="videos" id="videos">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The <em>content</em></h2>
+      <p>Two pieces made for Monography, one for each side of the studio. Tap to play, sound on.</p>
+    </div>
+    <div class="vid-grid">
+      <article class="vid r">
+        <video controls playsinline preload="metadata" poster="../assets/video/monography-1.jpg"><source src="../assets/video/monography-1.mp4" type="video/mp4"></video>
+        <div>
+          <div class="k">Reel · 0:15</div>
+          <h3>The self-portrait studio</h3>
+          <p>The full experience in fifteen seconds: stepping in front of the backdrop, triggering the camera from the monitor, reviewing the frames and walking out with the prints.</p>
+          <ul>
+            <li>Shot and performed on camera, then edited to a hook-first rhythm.</li>
+            <li>Shows the customer exactly what happens, which is what removes the hesitation to book.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="vid r">
+        <video controls playsinline preload="metadata" poster="../assets/video/monography-2.jpg"><source src="../assets/video/monography-2.mp4" type="video/mp4"></video>
+        <div>
+          <div class="k">Reel · 0:12</div>
+          <h3>The walk-in photobooth</h3>
+          <p>The photobooth side: choosing a layout on the touchscreen, the booth itself, and the strips coming out, built for the friends-and-dates audience that shares this kind of content.</p>
+          <ul>
+            <li>Quick cuts and close-ups on the tactile moments: the screen, the strips, the prints on the floor.</li>
+            <li>Formatted vertically for Instagram and TikTok without re-editing.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <div class="reel-cta">
+      <a class="btn solid" href="https://www.instagram.com/reel/DEi-7c8plR3/" target="_blank" rel="noopener">Watch the published reel on Instagram
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      <p>Posted on Monography's own account.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="sec results">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Results &amp; <em>skills</em></h2>
+    </div>
+    <div class="grid">
+      <div>
+        <div class="rcard r">
+          <div class="k">Results</div>
+          <ul>
+            <li>Strengthened the brand's digital presence through creative, experience-driven content.</li>
+            <li>Showcased the studio's unique photography experience to potential customers.</li>
+            <li>Developed expertise in visual storytelling, lifestyle content and audience-focused marketing.</li>
+          </ul>
+        </div>
+        <div class="rcard r" style="margin-top:20px">
+          <div class="k">Skills demonstrated</div>
+          <div class="chips">
+            <span class="chip">Content creation</span><span class="chip">Social media marketing</span><span class="chip">Visual storytelling</span><span class="chip">Lifestyle photography</span><span class="chip">Brand communication</span><span class="chip">Digital marketing strategy</span>
+          </div>
+        </div>
+      </div>
+      <div class="photo r"><img src="../assets/work-monography.jpg" alt="Behind the scenes at a Monography studio session"><span>Behind the scenes · Monography studio</span></div>
+    </div>
+    <div style="margin-top:48px;display:flex;gap:14px;flex-wrap:wrap">
+      <a class="btn solid" href="../#exp">Back to the portfolio</a>
+      <a class="btn" href="../thaphae/">Next case study: Thai Tavern
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <small>© 2026 Tanya Masatit</small>
+    <small>Monography · Toronto + Montréal</small>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (location.search.indexOf('noanim')>-1) reduce = true;
+  var nav = document.getElementById('nav');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 40); }
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+  var els = document.querySelectorAll('.r');
+  if ('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -8% 0px', threshold:.08});
+    els.forEach(function(el){ io.observe(el); });
+    requestAnimationFrame(function(){ els.forEach(function(el){ if(el.getBoundingClientRect().top < window.innerHeight) el.classList.add('in'); }); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+  var sraf=null; function revealVisible(){ sraf=null; els.forEach(function(el){ if(el.classList.contains('in')) return; var r=el.getBoundingClientRect(); if(r.top < window.innerHeight*1.15 && r.bottom > -40) el.classList.add('in'); }); }
+  function onReveal(){ if(!sraf) sraf=requestAnimationFrame(revealVisible); }
+  window.addEventListener('scroll', onReveal, {passive:true}); window.addEventListener('resize', onReveal); window.addEventListener('load', onReveal);
+  setTimeout(function(){ els.forEach(function(el){ el.classList.add('in'); }); }, 7000);
+  var vids = document.querySelectorAll('video');
+  vids.forEach(function(v){ v.addEventListener('play', function(){ vids.forEach(function(o){ if(o!==v) o.pause(); }); }); });
+})();
+</script>
+</body>
+</html>

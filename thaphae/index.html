@@ -95,7 +95,7 @@ p{margin:0}
 /* design work */
 .design .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .dcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:grid;grid-template-rows:auto 1fr}
-.dcard .art{background:#F4F1EC;display:grid;place-items:center;padding:24px;aspect-ratio:3/4}
+.dcard .art{position:relative;background:#F4F1EC;display:grid;place-items:center;padding:24px;aspect-ratio:3/4;min-height:0;overflow:hidden}
 .dcard .art.poster{padding:0;background:#1a1a2e}
 .dcard .art img{max-height:100%;max-width:100%;width:auto;height:auto;border-radius:10px}
 .dcard .art.poster img{width:100%;height:100%;max-height:none;border-radius:0;object-fit:cover}
@@ -226,7 +226,7 @@ p{margin:0}
         </div>
       </article>
       <article class="dcard r">
-        <div class="art poster"><video controls playsinline muted loop preload="metadata" poster="../assets/video/thaphae-promo.jpg" style="width:100%;height:100%;object-fit:cover;max-height:none"><source src="../assets/video/thaphae-promo.mp4" type="video/mp4"></video></div>
+        <div class="art poster"><video controls playsinline muted loop preload="metadata" poster="../assets/video/thaphae-promo.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><source src="../assets/video/thaphae-promo.mp4" type="video/mp4"></video></div>
         <div class="body">
           <div class="k">Promotion · Animated story</div>
           <h3>Sales promotions</h3>
