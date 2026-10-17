@@ -233,6 +233,11 @@ p{margin:0}
 .ph-grid div{aspect-ratio:3/4;border-radius:6px;background:linear-gradient(160deg,#2A241E,#1C1814);position:relative}
 .ph-grid div::after{content:attr(data-v);position:absolute;left:6px;bottom:5px;font-family:var(--mono);font-size:9px;color:#F1ECE4;opacity:.85}
 .ph-grid div.hot{background:linear-gradient(160deg,color-mix(in srgb,var(--orchid) 70%,#000),#3A1020)}
+.insights{margin:0 0 0 auto;width:min(560px,100%);border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.12);box-shadow:0 50px 80px -40px rgba(0,0,0,.9);background:#fff}
+.insights img{width:100%;height:auto;display:block}
+.insights figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dark-muted);background:var(--dark-2);padding:12px 16px;border-top:1px solid rgba(255,255,255,.08)}
+.ig-grid{margin:0 auto;width:min(460px,100%);border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.12);box-shadow:0 50px 80px -40px rgba(0,0,0,.9);background:#fff}
+.ig-grid img{width:100%;height:auto;display:block}
 .reels-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-top:90px;margin-bottom:24px;flex-wrap:wrap}
 .reels-head h3{font-family:var(--display);font-size:34px;line-height:1.05}
 .reels-head h3 em{font-style:italic;font-weight:500;color:var(--orchid)}
@@ -255,7 +260,7 @@ p{margin:0}
 .lesson h3{font-family:var(--display);font-size:32px;line-height:1.05;margin-top:12px}
 .lesson p{color:var(--dark-muted);margin-top:14px;font-size:15px}
 .lesson .q{margin-top:20px;font-family:var(--display);font-style:italic;font-size:19px;color:var(--dark-text)}
-@media (max-width:980px){.viral .top{grid-template-columns:1fr}.phone{margin:16px auto 0}.lessons{grid-template-columns:1fr}.reels{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:980px){.viral .top{grid-template-columns:1fr}.insights{margin:16px auto 0}.lessons{grid-template-columns:1fr}}
 
 /* ---------- experience ---------- */
 .exp{padding:130px 0 110px}
@@ -610,39 +615,24 @@ p{margin:0}
           <div class="step"><div class="k">04</div><div><h3>Re-cut the winner</h3><p>The best-performing structure becomes a template: same pacing, same on-screen text rhythm, new subject. That's how a one-off becomes a series.</p></div></div>
         </div>
       </div>
-      <div class="phone r" id="phone" aria-label="Instagram insights summary">
-        <div class="notch"></div>
-        <div class="ph-head"><span>Insights</span><span>Last 60 days</span></div>
-        <div class="ph-title">Two-part series</div>
-        <div class="ph-sub">Reach · organic only</div>
-        <div class="bars">
-          <div class="bar"><span>Views</span><div class="tr"><div class="fl" style="--w:100%"></div></div><span class="v">3.0M</span></div>
-          <div class="bar"><span>Interact.</span><div class="tr"><div class="fl" style="--w:62%"></div></div><span class="v">250K</span></div>
-          <div class="bar"><span>Shares</span><div class="tr"><div class="fl" style="--w:46%"></div></div><span class="v">70K</span></div>
-          <div class="bar"><span>Saves</span><div class="tr"><div class="fl" style="--w:40%"></div></div><span class="v">65K</span></div>
-        </div>
-        <div class="ph-grid" aria-hidden="true">
-          <div class="hot" data-v="Part 1"></div><div class="hot" data-v="Part 2"></div><div data-v="test"></div>
-          <div data-v="test"></div><div data-v="test"></div><div data-v="test"></div>
-        </div>
-      </div>
+      <figure class="insights r">
+        <img src="assets/ig-insights.jpg" alt="Instagram Reel insights for the two-part series: 1.84M and 1.73M views" loading="lazy">
+        <figcaption>Instagram Reel insights · Part 1 and Part 2 of the series</figcaption>
+      </figure>
     </div>
 
     <div class="reels-head">
       <div>
         <h3>Pinned on <em>@sheistanyam</em></h3>
-        <p>The videos I keep at the top of my profile: beauty and lifestyle content made with the same hook-first, share-first method.</p>
+        <p>The Reels tab as it stands, with the two-part series pinned at the top at 1.9M and 1.8M views.</p>
       </div>
       <a class="btn light" href="https://www.instagram.com/sheistanyam/" target="_blank" rel="noopener">Open Instagram
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
       </a>
     </div>
-    <div class="reels">
-      <a class="reel r" href="https://www.instagram.com/sheistanyam/reel/DXmeGm1ETF2/" target="_blank" rel="noopener"><img src="assets/reel-eyeliner.jpg" alt="Reel: bottom eyeliner on top" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></span><span class="cap"><small>Tutorial · Reel</small>Bottom eyeliner on top: the easy way to make your eyes pop</span></a>
-      <a class="reel r" href="https://www.instagram.com/sheistanyam/reel/DZiNSk9JEQm/" target="_blank" rel="noopener"><img src="assets/reel-lipcombo.jpg" alt="Reel: daily summer lip combo" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></span><span class="cap"><small>Beauty · Reel</small>My daily lip combo in summer, with MAC and Lilybyred</span></a>
-      <a class="reel r" href="https://www.instagram.com/sheistanyam/reel/DXvHbbvMUNK/" target="_blank" rel="noopener"><img src="assets/reel-fitting.jpg" alt="Reel: fitting time" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></span><span class="cap"><small>Fashion · Reel</small>I called it fitting time</span></a>
-      <a class="reel r" href="https://www.instagram.com/sheistanyam/reel/DX4xU3EJVHD/" target="_blank" rel="noopener"><img src="assets/reel-glow.jpg" alt="Reel: how can I not be" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></span><span class="cap"><small>Lifestyle · Reel</small>How can I not be?</span></a>
-    </div>
+    <figure class="ig-grid r">
+      <img src="assets/ig-grid.jpg" alt="The Reels tab on @sheistanyam, with the two pinned videos at 1.9M and 1.8M views" loading="lazy">
+    </figure>
 
     <div class="lessons">
       <article class="lesson r"><div class="k">Lesson one</div><h3>Shares beat likes.</h3><p>Likes boost ego. Shares build distribution. When someone sends your post to a friend, the algorithm reads it as value.</p><p class="q">"Virality isn't about being liked. It's about being passed along."</p></article>
