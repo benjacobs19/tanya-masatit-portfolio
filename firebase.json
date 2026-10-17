@@ -4,6 +4,6 @@
     "public": ".",
     "ignore": ["firebase.json", ".firebaserc", "**/.*", "**/node_modules/**"],
     "cleanUrls": true,
-    "headers": [{"source": "**/*.@(webp|jpg|png)", "headers": [{"key": "Cache-Control", "value": "public, max-age=604800"}]}]
+    "headers": [{"source": "**/*.@(webp|jpg|png)", "headers": [{"key": "Cache-Control", "value": "public, max-age=86400"}]}]
   }
 }
