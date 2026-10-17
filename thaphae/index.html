@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thai Tavern · Tanya Masatit</title>
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Tanya Masatit's work as Marketing Coordinator at Thai Tavern (formerly Tha Phae Tavern), Toronto: Thai Fest, event brochures, the Rod Daeng karaoke-bar logo and the pool-table launch video.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bone:#141210; --bone-2:#1E1A16; --ink:#F1ECE4; --ink-2:#C9BDAE; --ink-3:#8F8375;
+  --line:rgba(241,236,228,.14); --camel:#B8894C; --camel-2:#D9B27C; --orchid:#C8386B;
+  --dark-text:#F1ECE4; --dark-muted:#A79B8C; --card:#1E1A16;
+  --shadow:0 30px 60px -30px rgba(0,0,0,.8);
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --body:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono","SF Mono",Menlo,monospace;
+  --radius:22px; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bone);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;font-weight:500;text-wrap:balance}
+p{margin:0}
+.wrap{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.sec{padding:100px 0}
+.sec-head{margin-bottom:44px;max-width:60ch}
+.sec-head h2{font-family:var(--display);font-size:clamp(36px,5vw,62px);line-height:1;letter-spacing:-.01em}
+.sec-head h2 em{font-style:italic;font-weight:500;font-variation-settings:"opsz" 32;color:var(--camel)}
+.sec-head p{color:var(--ink-2);margin-top:16px}
+:focus-visible{outline:2px solid var(--camel);outline-offset:4px;border-radius:4px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:999px;border:1px solid var(--ink);font-weight:500;font-size:15px;transition:transform .25s ease,background .25s ease,color .25s ease,border-color .25s ease;background:transparent;color:var(--ink)}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--ink);color:var(--bone)}
+.btn.solid:hover{background:var(--camel);border-color:var(--camel);color:#fff}
+.btn svg{width:16px;height:16px;flex:none}
+
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;padding:16px 0;transition:background .3s ease}
+.nav.scrolled{background:color-mix(in srgb,var(--bone) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.back{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--ink-2)}
+.back svg{width:16px;height:16px}
+.back:hover{color:var(--ink)}
+.mark{font-family:var(--display);font-size:20px;white-space:nowrap}
+
+/* banner */
+.banner{position:relative;margin-top:72px;background:#0A0908;border-bottom:1px solid var(--line);overflow:hidden}
+.banner::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 18% 35%,rgba(184,137,76,.16),transparent 55%)}
+.banner .wrap{position:relative;z-index:1;padding:110px 0 56px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}
+.wordmark{font-family:var(--display);font-size:clamp(34px,4.2vw,54px);line-height:1;letter-spacing:.02em;margin-bottom:26px}
+.wordmark small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--camel-2);margin-top:10px}
+.banner h1{font-family:var(--display);font-size:clamp(44px,7vw,92px);line-height:.95;letter-spacing:-.015em}
+.banner h1 em{font-style:italic;font-weight:500;font-variation-settings:"opsz" 28;color:var(--camel-2)}
+.banner .meta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:22px}
+.banner .meta .pill{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:7px 11px;border:1px solid rgba(241,236,228,.3);border-radius:999px;color:var(--ink-2)}
+.banner .side{justify-self:end;max-width:40ch;color:var(--ink-2);font-size:16px;display:grid;gap:18px}
+.banner .side a.site{color:var(--ink);border-bottom:1px solid var(--camel);padding-bottom:3px;display:inline-block;justify-self:start}
+@media (max-width:900px){.banner .wrap{grid-template-columns:1fr}.banner .side{justify-self:start}}
+
+/* role */
+.role .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.role ul{margin:24px 0 0;padding-left:18px;display:grid;gap:12px;color:var(--ink-2);font-size:16.5px;max-width:58ch}
+.role ul li::marker{color:var(--camel)}
+.role ul b{color:var(--ink);font-weight:600}
+.ph{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:var(--bone-2)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph figcaption{position:absolute;left:14px;bottom:14px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(20,18,16,.74);color:var(--dark-text);padding:7px 11px;border-radius:999px;backdrop-filter:blur(6px)}
+.ph figure{margin:0;height:100%}
+.role .ph{aspect-ratio:4/5}
+@media (max-width:900px){.role .grid{grid-template-columns:1fr;gap:32px}.role .ph{aspect-ratio:4/3}}
+
+/* thai fest */
+.fest{background:var(--bone-2);padding:100px 0}
+.fest .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:8px}
+.fest .ph{aspect-ratio:3/4}
+.fest .copy{display:grid;gap:18px;align-content:center}
+.fest .copy h3{font-family:var(--display);font-size:30px;line-height:1.05}
+.fest .copy p{color:var(--ink-2)}
+.fest ul{margin:0;padding-left:18px;display:grid;gap:10px;color:var(--ink-2);font-size:15.5px}
+.fest ul li::marker{color:var(--camel)}
+.fest ul b{color:var(--ink);font-weight:600}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+.stat{background:var(--bone);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.stat b{font-family:var(--display);font-size:26px;display:block;line-height:1}
+.stat small{color:var(--ink-3);font-size:12.5px;display:block;margin-top:6px;line-height:1.35}
+@media (max-width:900px){.fest .grid{grid-template-columns:1fr}.stat-row{grid-template-columns:1fr 1fr 1fr}}
+@media (max-width:560px){.stat-row{grid-template-columns:1fr}}
+
+/* design work */
+.design .cards{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.dcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.dcard .art{background:#F4F1EC;display:grid;place-items:center;padding:28px;min-height:360px}
+.dcard .art.poster{padding:0;background:#1a1a2e}
+.dcard .art img{max-height:520px;width:auto;height:auto;border-radius:10px}
+.dcard .art.poster img{width:100%;height:100%;max-height:none;border-radius:0;object-fit:cover}
+.dcard .body{padding:26px}
+.dcard .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--camel)}
+.dcard h3{font-family:var(--display);font-size:30px;line-height:1.05;margin-top:10px}
+.dcard p{color:var(--ink-2);font-size:15px;margin-top:12px}
+.dcard ul{margin:12px 0 0;padding-left:18px;color:var(--ink-2);font-size:14.5px;display:grid;gap:6px}
+.dcard ul li::marker{color:var(--camel)}
+@media (max-width:900px){.design .cards{grid-template-columns:1fr}}
+
+/* video */
+.launch{background:var(--bone-2);padding:100px 0}
+.launch .grid{display:grid;grid-template-columns:320px 1fr;gap:40px;align-items:center}
+.launch video{width:100%;aspect-ratio:9/16;border-radius:18px;background:#000;object-fit:cover;box-shadow:var(--shadow)}
+.launch h3{font-family:var(--display);font-size:clamp(28px,3.2vw,40px);line-height:1.05}
+.launch p{color:var(--ink-2);margin-top:14px;max-width:56ch}
+.launch ul{margin:16px 0 0;padding-left:18px;color:var(--ink-2);font-size:15.5px;display:grid;gap:8px;max-width:56ch}
+.launch ul li::marker{color:var(--camel)}
+.placeholder{aspect-ratio:9/16;border-radius:18px;border:1px dashed rgba(241,236,228,.3);display:grid;place-items:center;text-align:center;padding:24px;color:var(--ink-3);font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;line-height:1.6}
+@media (max-width:800px){.launch .grid{grid-template-columns:1fr}.launch video,.placeholder{max-width:320px;margin:0 auto}}
+
+.foot{border-top:1px solid var(--line);padding:40px 0 60px}
+.foot .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot small{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+
+.r{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.r.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}.r{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="back" href="../#exp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>Back to portfolio</a>
+    <a class="mark" href="../">Tanya Masatit</a>
+  </div>
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+  <div class="wrap">
+    <div>
+      <div class="wordmark">Thai Tavern<small>Formerly Tha Phae Tavern · 221 Richmond St W, Toronto</small></div>
+      <p class="eyebrow" style="color:var(--ink-2)">Case study · Thai Tavern (Tha Phae Tavern Inc.)</p>
+      <h1>Marketing <em>Coordinator</em></h1>
+      <div class="meta">
+        <span class="pill">Aug 2025 – Mar 2026</span>
+        <span class="pill">Toronto, ON · hybrid</span>
+        <span class="pill">Host, Mar – Oct 2025</span>
+      </div>
+    </div>
+    <div class="side">
+      <p>A Thai bar and restaurant on Richmond Street West inspired by Chiang Mai's Tha Phae Gate: happy hour, karaoke, trivia and events. The venue has since renewed its name from Tha Phae Tavern to Thai Tavern.</p>
+      <a class="site" href="https://thaitaverntoronto.com/" target="_blank" rel="noopener">thaitaverntoronto.com ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ROLE -->
+<section class="sec role">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">The role</p>
+      <div class="sec-head" style="margin-bottom:0;margin-top:12px"><h2>What I <em>did here</em></h2></div>
+      <ul>
+        <li><b>Ran the bar's marketing</b> end to end: social media, event promotion, print and in-venue design, with sales and foot traffic as the scoreboard.</li>
+        <li><b>Helped manage Thai Fest</b>, the bar's festival presence in downtown Toronto, from the first materials list to tear-down.</li>
+        <li><b>Designed brochures, posters and menus</b> for a run of events: trivia nights, karaoke, happy hour and seasonal promotions.</li>
+        <li><b>Designed the logo</b> for Rod Daeng, the karaoke bar inside the venue.</li>
+        <li><b>Shot and edited announcement videos</b>, including the launch of the new pool-table section.</li>
+        <li><b>Started as Host</b>, which is where the guest insight behind every promotion came from.</li>
+      </ul>
+    </div>
+    <div class="ph r"><figure><img src="../assets/work-thaphae.jpg" alt="Tanya in traditional Thai dress at the Thai Tavern festival booth"><figcaption>Thai Fest · Toronto · 2025</figcaption></figure></div>
+  </div>
+</section>
+
+<!-- THAI FEST -->
+<section class="fest" id="thaifest">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Event</p>
+      <h2>Thai <em>Fest</em></h2>
+      <p>A downtown Toronto street festival where the bar served its menu to thousands of passers-by. The goal was simple: raise brand awareness and bring the diversity of Thai cuisine to a Canadian crowd that mostly knows pad thai.</p>
+    </div>
+    <div class="grid">
+      <div class="ph r"><figure><img src="../assets/thaphae/thaifest-team.jpg" alt="The Thai Tavern team at Thai Fest in traditional dress"><figcaption>The team at the booth · Thai Fest</figcaption></figure></div>
+      <div class="copy r">
+        <h3>From the materials list to the last plate</h3>
+        <ul>
+          <li><b>Planning:</b> built the event materials list and timeline with the owners, then sourced everything from banners and menu boards to serving supplies and signage.</li>
+          <li><b>Brand presence:</b> designed the booth graphics, menu cards and giveaways so the stall read as Thai Tavern from across the square.</li>
+          <li><b>On the day:</b> worked the booth in traditional dress, hosted guests, ran content capture and kept the team on the plan.</li>
+          <li><b>After:</b> turned the photos and clips into a week of social content and a follow-up push to bring festival visitors into the bar.</li>
+        </ul>
+        <div class="stat-row">
+          <div class="stat"><b>Start → finish</b><small>Owned the event materials from first list to tear-down</small></div>
+          <div class="stat"><b>Awareness</b><small>New faces introduced to the bar and the broader Thai menu</small></div>
+          <div class="stat"><b>Content</b><small>A full week of posts captured in one afternoon</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN -->
+<section class="sec design" id="design">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Design <em>work</em></h2>
+      <p>Print and digital pieces made to put people in seats: event promotion that lifted traffic on quiet nights, and a brand mark for the karaoke room.</p>
+    </div>
+    <div class="cards">
+      <article class="dcard r">
+        <div class="art poster"><img src="../assets/thaphae/trivia-poster.jpg" alt="Trivia Night poster for Thai Tavern with Question Everything"></div>
+        <div class="body">
+          <div class="k">Event promotion · Poster &amp; social</div>
+          <h3>Event brochures &amp; posters</h3>
+          <p>One of a series of event designs for the bar. This Trivia Night poster, co-hosted with Question Everything, ran as a print flyer, an Instagram post and a story, with a QR code for reservations.</p>
+          <ul>
+            <li>Series covered trivia, karaoke, happy hour and seasonal promotions.</li>
+            <li>Each piece built around one job: fill a specific night and lift sales on it.</li>
+            <li>Designed in Canva to the bar's playful, colourful tone.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="dcard r">
+        <div class="art"><img src="../assets/thaphae/rod-daeng-logo.jpg" alt="Rod Daeng Bar and Karaoke logo"></div>
+        <div class="body">
+          <div class="k">Brand identity · Logo</div>
+          <h3>Rod Daeng Bar &amp; Karaoke</h3>
+          <p>Logo for the karaoke bar inside the venue. "Rod Daeng" is the red share-taxi truck of Chiang Mai, so the mark puts the truck front and centre in a vintage badge, with a palette that works on signage, menus and screens.</p>
+          <ul>
+            <li>Badge format so it holds up as a door sign, a menu stamp and a social avatar.</li>
+            <li>Two-colour build for cheap, consistent printing.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- POOL TABLE VIDEO -->
+<section class="launch" id="pool">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Launch <em>video</em></h2>
+    </div>
+    <div class="grid">
+      <div class="r" id="poolSlot">
+        <div class="placeholder">Pool-table launch video<br>coming shortly</div>
+      </div>
+      <div class="r">
+        <p class="eyebrow">Announcement · Instagram Reel</p>
+        <h3 style="margin-top:10px">The new pool-table section</h3>
+        <p>When the bar opened a new pool-table section, I shot and edited the announcement video to get regulars back in and give new guests another reason to stay for one more round.</p>
+        <ul>
+          <li>Planned the shots around the room's best angles and the busiest-looking moments.</li>
+          <li>Cut to a quick, hook-first rhythm with on-screen text so it reads with the sound off.</li>
+          <li>Posted alongside a promotion to drive traffic on the launch week.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:40px">
+  <div class="wrap" style="display:flex;gap:14px;flex-wrap:wrap">
+    <a class="btn solid" href="../#exp">Back to the portfolio</a>
+    <a class="btn" href="../milestone/">Next case study: Milestone Energy
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <small>© 2026 Tanya Masatit</small>
+    <small>Thai Tavern · Rod Daeng Bar &amp; Karaoke</small>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (location.search.indexOf('noanim')>-1) reduce = true;
+  var nav = document.getElementById('nav');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 40); }
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+  var els = document.querySelectorAll('.r');
+  if ('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -8% 0px', threshold:.08});
+    els.forEach(function(el){ io.observe(el); });
+    requestAnimationFrame(function(){ els.forEach(function(el){ if(el.getBoundingClientRect().top < window.innerHeight) el.classList.add('in'); }); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+  var sraf=null; function revealVisible(){ sraf=null; els.forEach(function(el){ if(el.classList.contains('in')) return; var r=el.getBoundingClientRect(); if(r.top < window.innerHeight*1.15 && r.bottom > -40) el.classList.add('in'); }); }
+  function onReveal(){ if(!sraf) sraf=requestAnimationFrame(revealVisible); }
+  window.addEventListener('scroll', onReveal, {passive:true}); window.addEventListener('resize', onReveal); window.addEventListener('load', onReveal);
+  setTimeout(function(){ els.forEach(function(el){ el.classList.add('in'); }); }, 7000);
+})();
+</script>
+</body>
+</html>
