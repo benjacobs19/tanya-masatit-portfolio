@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Milestone Energy · Tanya Masatit</title>
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Tanya Masatit's work as Marketing Coordinator at Milestone Energy Inc., with the videos, copy and event support she produced for Milestone, MAXPower Services and CORE Plumbing & Mechanical.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bone:#141210; --bone-2:#1E1A16; --ink:#F1ECE4; --ink-2:#C9BDAE; --ink-3:#8F8375;
+  --line:rgba(241,236,228,.14); --camel:#B8894C; --camel-2:#D9B27C; --orchid:#C8386B;
+  --dark:#141210; --dark-2:#1E1A16; --dark-text:#F1ECE4; --dark-muted:#A79B8C; --card:#1E1A16;
+  --navy:#0B2A45; --navy-2:#153C5E;
+  --shadow:0 30px 60px -30px rgba(0,0,0,.8);
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --body:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono","SF Mono",Menlo,monospace;
+  --radius:22px; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bone);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;font-weight:500;text-wrap:balance}
+p{margin:0}
+.wrap{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.sec{padding:100px 0}
+.sec-head{margin-bottom:44px;max-width:60ch}
+.sec-head h2{font-family:var(--display);font-size:clamp(36px,5vw,62px);line-height:1;letter-spacing:-.01em}
+.sec-head h2 em{font-style:italic;font-weight:500;font-variation-settings:"opsz" 32;color:var(--camel)}
+.sec-head p{color:var(--ink-2);margin-top:16px}
+:focus-visible{outline:2px solid var(--camel);outline-offset:4px;border-radius:4px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:999px;border:1px solid var(--ink);font-weight:500;font-size:15px;transition:transform .25s ease,background .25s ease,color .25s ease,border-color .25s ease;background:transparent;color:var(--ink)}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--ink);color:var(--bone)}
+.btn.solid:hover{background:var(--camel);border-color:var(--camel);color:#fff}
+.btn svg{width:16px;height:16px;flex:none}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;padding:16px 0;transition:background .3s ease}
+.nav.scrolled{background:color-mix(in srgb,var(--bone) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.back{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--ink-2)}
+.back svg{width:16px;height:16px}
+.back:hover{color:var(--ink)}
+.mark{font-family:var(--display);font-size:20px;white-space:nowrap}
+
+/* banner */
+.banner{position:relative;margin-top:72px;min-height:560px;display:grid;align-items:end;overflow:hidden;border-bottom:1px solid var(--line)}
+.banner .bg{position:absolute;inset:-40px;background:url("../assets/milestone/banner.jpg") center/cover no-repeat;filter:blur(14px) saturate(.8);transform:scale(1.06)}
+.banner .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,18,16,.97) 0%,rgba(20,18,16,.72) 45%,rgba(11,42,69,.55) 100%)}
+.banner .wrap{position:relative;z-index:1;padding:120px 0 56px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}
+.banner .logo{width:min(300px,60vw);height:auto;margin-bottom:28px;filter:drop-shadow(0 10px 30px rgba(0,0,0,.5))}
+.banner h1{font-family:var(--display);font-size:clamp(44px,7vw,92px);line-height:.95;letter-spacing:-.015em}
+.banner h1 em{font-style:italic;font-weight:500;font-variation-settings:"opsz" 28;color:var(--camel-2)}
+.banner .meta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:22px}
+.banner .meta .pill{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:7px 11px;border:1px solid rgba(241,236,228,.3);border-radius:999px;color:var(--ink-2)}
+.now-badge{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--camel-2)}
+.now-badge i{width:6px;height:6px;border-radius:50%;background:var(--camel-2);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--camel-2) 60%,transparent)}70%{box-shadow:0 0 0 8px transparent}}
+.banner .side{justify-self:end;max-width:40ch;color:var(--ink-2);font-size:16px;display:grid;gap:18px}
+.banner .side a.site{color:var(--ink);border-bottom:1px solid var(--camel);padding-bottom:3px;display:inline-block;justify-self:start}
+@media (max-width:900px){.banner .wrap{grid-template-columns:1fr}.banner .side{justify-self:start}.banner{min-height:auto}}
+
+/* role */
+.role .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.role ul{margin:24px 0 0;padding-left:18px;display:grid;gap:12px;color:var(--ink-2);font-size:16.5px;max-width:58ch}
+.role ul li::marker{color:var(--camel)}
+.role ul b{color:var(--ink);font-weight:600}
+.ph{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:var(--bone-2)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph figcaption{position:absolute;left:14px;bottom:14px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(20,18,16,.74);color:var(--dark-text);padding:7px 11px;border-radius:999px;backdrop-filter:blur(6px)}
+.ph figure{margin:0;height:100%}
+.role .ph{aspect-ratio:4/3}
+@media (max-width:900px){.role .grid{grid-template-columns:1fr;gap:32px}}
+
+/* skills */
+.skills{padding:0 0 100px}
+.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.skill{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 16px;transition:transform .3s ease,border-color .3s ease}
+.skill:hover{transform:translateY(-3px);border-color:var(--camel)}
+.skill b{display:block;font-weight:600;font-size:15px}
+.skill small{display:block;color:var(--ink-3);font-size:13px;margin-top:4px;line-height:1.4}
+@media (max-width:900px){.skill-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.skill-grid{grid-template-columns:1fr}}
+
+/* videos */
+.videos{background:var(--bone-2);padding:100px 0}
+.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.vid{display:grid;grid-template-columns:260px 1fr;gap:26px;align-items:start;background:var(--bone);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.vid video{width:100%;aspect-ratio:9/16;border-radius:14px;background:#000;object-fit:cover}
+.vid h3{font-family:var(--display);font-size:28px;line-height:1.05}
+.vid .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--camel);margin-bottom:10px}
+.vid p{color:var(--ink-2);font-size:15px;margin-top:12px}
+.vid ul{margin:12px 0 0;padding-left:18px;color:var(--ink-2);font-size:14.5px;display:grid;gap:6px}
+.vid ul li::marker{color:var(--camel)}
+@media (max-width:1100px){.vid-grid{grid-template-columns:1fr}}
+@media (max-width:600px){.vid{grid-template-columns:1fr}.vid video{max-width:300px;margin:0 auto}}
+
+/* copy */
+.copy .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.copy .post{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff}
+.copy .post img{width:100%;height:auto}
+.copy .text{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.copy .text .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--camel)}
+.copy blockquote{margin:14px 0 0;font-size:16px;line-height:1.65;color:var(--ink);white-space:pre-line}
+.copy .notes{margin-top:26px;border-top:1px solid var(--line);padding-top:20px;display:grid;gap:12px}
+.copy .notes > div{display:grid;grid-template-columns:34px 1fr;gap:12px;font-size:14.5px;color:var(--ink-2)}
+.copy .notes i{font-family:var(--display);font-style:italic;font-size:20px;color:var(--orchid);line-height:1.2}
+.copy .notes b{color:var(--ink);font-weight:600}
+@media (max-width:900px){.copy .grid{grid-template-columns:1fr}}
+
+/* group */
+.group{padding:100px 0 120px}
+.gcard{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding:40px 0;border-top:1px solid var(--line)}
+.gcard:last-of-type{border-bottom:1px solid var(--line)}
+.gcard.flip .ph{order:2}
+.gcard .ph{aspect-ratio:4/3}
+.gcard h3{font-family:var(--display);font-size:clamp(30px,3.4vw,44px);line-height:1.02;margin-top:12px}
+.gcard .co{color:var(--ink-2);margin-top:8px}
+.gcard ul{margin:18px 0 0;padding-left:18px;color:var(--ink-2);font-size:15.5px;display:grid;gap:8px;max-width:58ch}
+.gcard ul li::marker{color:var(--camel)}
+.playcard{position:relative;cursor:pointer;display:block;border:0;padding:0;background:none;text-align:left;width:100%}
+.playcard .play{position:absolute;inset:0;display:grid;place-items:center}
+.playcard .play span{width:84px;height:84px;border-radius:50%;background:rgba(255,255,255,.14);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.35);display:grid;place-items:center;color:#fff;transition:transform .3s ease,background .3s ease}
+.playcard:hover .play span{transform:scale(1.08);background:var(--camel)}
+.playcard .play svg{width:30px;height:30px;margin-left:4px}
+.playcard img{transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.playcard:hover img{transform:scale(1.04)}
+.playcard .tip{position:absolute;right:14px;top:14px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(20,18,16,.74);color:var(--dark-text);padding:7px 11px;border-radius:999px}
+@media (max-width:900px){.gcard{grid-template-columns:1fr;gap:24px}.gcard.flip .ph{order:0}}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;background:rgba(10,9,8,.86);backdrop-filter:blur(8px);display:none;place-items:center;padding:24px}
+.modal.open{display:grid}
+.modal .box{position:relative;width:min(420px,100%);}
+.modal video{width:100%;aspect-ratio:9/16;border-radius:20px;background:#000;box-shadow:0 60px 100px -40px rgba(0,0,0,.9)}
+.modal .close{position:absolute;top:-14px;right:-14px;width:40px;height:40px;border-radius:50%;background:var(--ink);color:var(--bone);border:0;cursor:pointer;font-size:20px;display:grid;place-items:center}
+.modal .cap{margin-top:12px;text-align:center;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dark-muted)}
+
+/* footer */
+.foot{border-top:1px solid var(--line);padding:40px 0 60px}
+.foot .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot small{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+
+.r{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.r.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}.r{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="back" href="../#exp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>Back to portfolio</a>
+    <a class="mark" href="../">Tanya Masatit</a>
+  </div>
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+  <div class="bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <img class="logo" src="../assets/milestone/milestone-logo.png" alt="Milestone Energy" width="900" height="319">
+      <p class="eyebrow" style="color:var(--ink-2)">Case study · Milestone Energy Inc.</p>
+      <h1>Marketing <em>Coordinator</em></h1>
+      <div class="meta">
+        <span class="pill">Mar 2026 – Present</span>
+        <span class="pill">Toronto, ON</span>
+        <span class="pill">MAXPower Services group</span>
+        <span class="now-badge"><i></i>Current role</span>
+      </div>
+    </div>
+    <div class="side">
+      <p>Milestone Energy is an electrical contractor specializing in energy-efficiency solutions for residential and commercial facilities: LED lighting, EV charging, security systems and electrical services for property managers and developers.</p>
+      <a class="site" href="https://www.milestoneenergy.ca/" target="_blank" rel="noopener">milestoneenergy.ca ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ROLE -->
+<section class="sec role">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">The role</p>
+      <div class="sec-head" style="margin-bottom:0;margin-top:12px"><h2>What I <em>do here</em></h2></div>
+      <ul>
+        <li><b>Own the content calendar</b> for Milestone Energy across LinkedIn, Instagram and the website, from idea to published post.</li>
+        <li><b>Shoot on site.</b> I go where the work is, rooftops included, to capture projects as they happen and turn them into short-form video.</li>
+        <li><b>Edit and caption</b> every video: pacing, on-screen text, subtitles and the hook that earns the first three seconds.</li>
+        <li><b>Write the copy</b> for posts, announcements and brochures in a voice that property managers actually read.</li>
+        <li><b>Design print and digital collateral</b>: brochures, banners, booth graphics and social templates.</li>
+        <li><b>Support the group</b>: the same work for sister companies MAXPower Services and CORE Plumbing &amp; Mechanical, keeping three brands consistent.</li>
+        <li><b>Track what performs</b> and feed it back into the next month's plan.</li>
+      </ul>
+    </div>
+    <div class="ph r"><figure><img src="../assets/milestone/rooftop.jpg" alt="Tanya filming a Milestone technician on a Toronto rooftop"><figcaption>On the roof for a project shoot · Toronto</figcaption></figure></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:18px">Skills in use</p>
+    <div class="skill-grid">
+      <div class="skill r"><b>Content strategy</b><small>Monthly calendars built around real projects and seasonal services</small></div>
+      <div class="skill r"><b>On-site video production</b><small>Shooting technicians and job sites on a phone rig, safely and fast</small></div>
+      <div class="skill r"><b>Video editing</b><small>CapCut cuts, subtitles and on-screen text for Reels and LinkedIn</small></div>
+      <div class="skill r"><b>Copywriting</b><small>Hooks, captions, announcements and brochure copy</small></div>
+      <div class="skill r"><b>Brochure &amp; banner design</b><small>Canva layouts for print and digital, brand-consistent across three companies</small></div>
+      <div class="skill r"><b>Social media management</b><small>Instagram and LinkedIn publishing, community replies, hashtags</small></div>
+      <div class="skill r"><b>Event &amp; trade-show support</b><small>Booth materials, giveaways, on-the-day presence and follow-up</small></div>
+      <div class="skill r"><b>Cross-team coordination</b><small>Working with technicians, account managers and leadership for stories and approvals</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section class="videos" id="videos">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Project <em>videos</em></h2>
+      <p>Two recent pieces I shot, edited and captioned for Milestone Energy. Tap to play, sound on.</p>
+    </div>
+    <div class="vid-grid">
+      <article class="vid r">
+        <video controls playsinline preload="metadata" poster="../assets/video/milestone-door-system.jpg">
+          <source src="../assets/video/milestone-door-system.mp4" type="video/mp4">
+        </video>
+        <div>
+          <div class="k">Project film · 1:28</div>
+          <h3>Automatic door system install</h3>
+          <p>A walk-through of a Milestone automatic-door installation, from the mechanics and wiring to the finished entrance, closed by a client-facing explanation of why it matters: a safer, more efficient building every day.</p>
+          <ul>
+            <li>Planned the shot list around the technician's workflow so nothing slowed the job down.</li>
+            <li>Filmed the install, then recorded the on-camera explainer on location.</li>
+            <li>Edited with step captions and subtitles so it works with the sound off.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="vid r">
+        <video controls playsinline preload="metadata" poster="../assets/video/milestone-communications.jpg">
+          <source src="../assets/video/milestone-communications.mp4" type="video/mp4">
+        </video>
+        <div>
+          <div class="k">Project film · 0:46</div>
+          <h3>Critical communications infrastructure</h3>
+          <p>Milestone partnered with a federal public-safety organization on a communications-infrastructure project supporting operations at BMO Field ahead of the FIFA World Cup. This is the piece that took me up on the roof.</p>
+          <ul>
+            <li>Captured rooftop and ground-level footage of the work in progress.</li>
+            <li>Wrote the voice-over-style captions to explain a technical project in plain language.</li>
+            <li>Published across Milestone's channels and reposted through the group.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COPY -->
+<section class="sec copy">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Copy<em>writing</em></h2>
+      <p>A sample post for Milestone's thermal-imaging inspection service. The brief: make an invisible problem feel urgent without sounding alarmist.</p>
+    </div>
+    <div class="grid">
+      <div class="post r"><img src="../assets/milestone/copy-thermal.jpg" alt="Milestone Energy Instagram post: The hotspot you can't see could matter most"></div>
+      <div class="text r">
+        <div class="k">Caption · @milestoneenergy.ca</div>
+        <blockquote>Not every electrical issue is visible.
+
+🔍 Thermal imaging helps:
+– Identify abnormal heat patterns
+– Spot potential electrical issues early
+– Support safer, more reliable building operations
+
+A clearer view today can help prevent unexpected disruptions tomorrow.
+
+Need a closer look at your electrical system? Milestone Energy is here to help.
+📧 info@milestoneenergy.ca
+🌐 www.milestoneenergy.ca</blockquote>
+        <div class="notes">
+          <div><i>01</i><span><b>Hook on the graphic.</b> "The hotspot you can't see could matter most" names the risk before the service.</span></div>
+          <div><i>02</i><span><b>Three benefits, scannable.</b> Short lines a property manager can read in a scroll.</span></div>
+          <div><i>03</i><span><b>One calm call to action.</b> Email and site, no pressure, plus hashtags aimed at facility and property managers.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GROUP -->
+<section class="group">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Supporting the <em>group</em></h2>
+      <p>Milestone Energy sits inside the MAXPower Services group alongside CORE Plumbing &amp; Mechanical. I support all three.</p>
+    </div>
+
+    <article class="gcard r" id="maxpower">
+      <button class="ph playcard" type="button" data-video="../assets/video/maxpower-brochure.mp4" data-cap="MAXPower Services · Landscape &amp; Design brochure launch" aria-label="Play the Landscape and Design brochure announcement video">
+        <img src="../assets/milestone/maxpower-team.jpg" alt="Tanya with the MAXPower Services marketing team">
+        <span class="tip">Play announcement</span>
+        <span class="play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></span></span>
+      </button>
+      <div>
+        <p class="eyebrow">Sister company</p>
+        <h3>MAXPower Services</h3>
+        <p class="co">Property services for commercial buildings: snow removal, landscaping, cleaning and more.</p>
+        <ul>
+          <li>Produce MAXPower's announcements and campaign content, including the launch of the new <b>Landscape &amp; Design Division brochure</b>: copy, visuals and the short announcement video. Click the photo to watch it.</li>
+          <li>Keep MAXPower's voice and visuals consistent with Milestone and CORE across LinkedIn and Instagram.</li>
+          <li>Support client-appreciation events and the group's trade-show calendar.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="gcard flip r" id="core">
+      <div class="ph"><figure><img src="../assets/work-milestone.jpg" alt="Tanya with the team at the MAXPower and CORE trade-show booth"><figcaption>Trade show · PM Springfest 2026</figcaption></figure></div>
+      <div>
+        <p class="eyebrow">Sister company</p>
+        <h3>CORE Plumbing &amp; Mechanical</h3>
+        <p class="co">Commercial plumbing and mechanical services for property managers.</p>
+        <ul>
+          <li>Represented CORE at <b>PM Springfest 2026</b>, from the booth plan to the conversations on the day and the follow-up afterwards.</li>
+          <li>Sourced and prepared everything the booth needed: brochures, banners, booth graphics, giveaways and the print orders behind them.</li>
+          <li>Designed the trade-show brochures and banners so CORE looked like the established brand it is next to larger exhibitors.</li>
+          <li>Captured photos and clips at the show for post-event content.</li>
+        </ul>
+      </div>
+    </article>
+
+    <div style="margin-top:48px;display:flex;gap:14px;flex-wrap:wrap">
+      <a class="btn solid" href="../#exp">Back to the portfolio</a>
+      <a class="btn" href="https://www.linkedin.com/in/tanya-masatit-a5a35b322/" target="_blank" rel="noopener">Connect on LinkedIn
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <small>© 2026 Tanya Masatit</small>
+    <small>Milestone Energy · MAXPower Services · CORE Plumbing &amp; Mechanical</small>
+  </div>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Video">
+  <div class="box">
+    <button class="close" type="button" aria-label="Close">×</button>
+    <video id="modalVideo" controls playsinline></video>
+    <div class="cap" id="modalCap"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (location.search.indexOf('noanim')>-1) reduce = true;
+  var nav = document.getElementById('nav');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 40); }
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  var els = document.querySelectorAll('.r');
+  if ('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -8% 0px', threshold:.08});
+    els.forEach(function(el){ io.observe(el); });
+    requestAnimationFrame(function(){ els.forEach(function(el){ if(el.getBoundingClientRect().top < window.innerHeight) el.classList.add('in'); }); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+  var sraf=null; function revealVisible(){ sraf=null; els.forEach(function(el){ if(el.classList.contains('in')) return; var r=el.getBoundingClientRect(); if(r.top < window.innerHeight*1.15 && r.bottom > -40) el.classList.add('in'); }); }
+  function onReveal(){ if(!sraf) sraf=requestAnimationFrame(revealVisible); }
+  window.addEventListener('scroll', onReveal, {passive:true}); window.addEventListener('resize', onReveal); window.addEventListener('load', onReveal);
+  setTimeout(function(){ els.forEach(function(el){ el.classList.add('in'); }); }, 7000);
+
+  // Video modal
+  var modal = document.getElementById('modal'), mv = document.getElementById('modalVideo'), cap = document.getElementById('modalCap');
+  function openVideo(src, text){ mv.src = src; cap.innerHTML = text || ''; modal.classList.add('open'); document.body.style.overflow='hidden'; mv.play().catch(function(){}); }
+  function closeVideo(){ mv.pause(); mv.removeAttribute('src'); mv.load(); modal.classList.remove('open'); document.body.style.overflow=''; }
+  document.querySelectorAll('[data-video]').forEach(function(b){ b.addEventListener('click', function(){ openVideo(b.getAttribute('data-video'), b.getAttribute('data-cap')); }); });
+  modal.querySelector('.close').addEventListener('click', closeVideo);
+  modal.addEventListener('click', function(e){ if(e.target===modal) closeVideo(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && modal.classList.contains('open')) closeVideo(); });
+  // Pause other inline videos when one starts
+  var vids = document.querySelectorAll('.vid video');
+  vids.forEach(function(v){ v.addEventListener('play', function(){ vids.forEach(function(o){ if(o!==v) o.pause(); }); }); });
+})();
+</script>
+</body>
+</html>
