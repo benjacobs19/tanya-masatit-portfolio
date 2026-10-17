@@ -328,8 +328,9 @@ p{margin:0}
 .contact h2 em{font-style:italic;color:var(--camel-2);font-weight:500;font-variation-settings:"opsz" 32}
 .contact .row-c{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:end;margin-top:56px}
 .contact .c-left{display:grid;gap:36px;padding-bottom:12px}
-.c-photo{position:relative;justify-self:end;width:min(100%,440px);aspect-ratio:4/5;border-radius:28px;overflow:hidden;background:radial-gradient(circle at 50% 72%,#E2BE8A 0%,#B8894C 48%,#7A5A33 100%)}
-.c-photo img{position:absolute;left:50%;bottom:-1%;transform:translateX(-50%);height:98%;width:auto;max-width:none;filter:drop-shadow(0 30px 40px rgba(0,0,0,.35))}
+.c-photo{position:relative;justify-self:end;width:min(100%,440px)}
+.c-photo::before{content:"";position:absolute;left:50%;top:58%;transform:translate(-50%,-50%);width:125%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--camel-2) 42%,transparent) 0%,color-mix(in srgb,var(--camel) 18%,transparent) 38%,transparent 66%);pointer-events:none}
+.c-photo img{position:relative;display:block;width:100%;height:auto;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45));-webkit-mask-image:linear-gradient(to bottom,#000 88%,transparent 100%);mask-image:linear-gradient(to bottom,#000 88%,transparent 100%)}
 .contact p{color:var(--dark-muted);max-width:44ch;font-size:18px}
 .contact .links{display:grid;gap:14px;align-content:start}
 .contact .links small{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dark-muted)}
