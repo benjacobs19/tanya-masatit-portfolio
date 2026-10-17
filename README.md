@@ -24,6 +24,5 @@ firebase deploy --only hosting:tanya
 
 ## Placeholders to replace
 
-- Contact email (`hello@tanyamasatit.com`)
 - Dates and bullet wording for the Monography and Solis Movement content-creator work
 - Version 2 only: the five project cover images in `assets/proj-*.jpg` are AI-generated stand-ins
